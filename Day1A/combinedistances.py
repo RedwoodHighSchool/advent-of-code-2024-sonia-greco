@@ -6,10 +6,11 @@ listA = []
 listB = []
 sumofdiff = 0
 
-with open("./input.txt", "r") as fh:
+with open("./D1Ainput.txt", "r") as fh:
     for myline in fh:
         num_list.append(myline)
         numbers = re.findall(r'\d+', myline)
+        #numbers = myline.split()
         listA.append(int(numbers[0]))
         listB.append(int(numbers[1]))
 
